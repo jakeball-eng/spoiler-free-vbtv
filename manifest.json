@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Spoiler Free Volleyball World TV",
+    "version": "1.1",
+    "description": "Removes spoilers when browsing replays on Volleyball World TV",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.volleyballworld.tv/*"],
+            "js": ["remove_spoilers.js"]
+        }
+    ]
+}
